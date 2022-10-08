@@ -1,5 +1,7 @@
 # v42 website
 
+Live site: https://v42.space
+
 Requires Node.js 16+.
 
 To setup:
@@ -19,6 +21,12 @@ To build the final product:
 
 ```
 yarn build
+```
+
+To publish to live site:
+
+```
+yarn publish
 ```
 
 ## License
