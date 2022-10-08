@@ -5,7 +5,8 @@
   "description": "v42 website",
   "scripts": {
     "dev": "parcel --port 53000",
-    "build": "parcel build --public-url ./"
+    "build": "parcel build --public-url ./",
+    "pub": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",

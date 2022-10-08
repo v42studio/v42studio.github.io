@@ -26,7 +26,7 @@ yarn build
 To publish to live site:
 
 ```
-yarn publish
+yarn pub
 ```
 
 ## License
