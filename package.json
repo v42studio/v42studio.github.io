@@ -1,0 +1,30 @@
+{
+  "name": "v42studio.github.io",
+  "private": true,
+  "version": "1.0.0",
+  "description": "v42 website",
+  "scripts": {
+    "dev": "parcel --port 53000",
+    "build": "parcel build --public-url ./"
+  },
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v42studio/v42studio.github.io.git"
+  },
+  "keywords": [
+    "v42"
+  ],
+  "author": "Ramesh Nair <ram@hiddentao.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/v42studio/v42studio.github.io/issues"
+  },
+  "homepage": "https://github.com/v42studio/v42studio.github.io#readme",
+  "devDependencies": {
+    "parcel": "^2.7.0",
+    "push-dir": "^0.4.1",
+    "shx": "^0.3.4"
+  }
+}
