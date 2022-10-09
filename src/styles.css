@@ -53,8 +53,11 @@ table {
 /* v42 styles */
 
 body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
   background-color: black;
   color: white;
+  height: 100vh;
 }
 
 /* glow animation */
@@ -70,10 +73,38 @@ body {
 main {
   text-align: center;
   vertical-align: middle;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
   font-size: 100px;
-  font-family: Raleway, sans-serif;
+  font-family: 'Play', sans-serif;
   animation: glow 1s ease-in-out infinite alternate;      
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  max-width: 450px;
+  padding: 0 1rem;
+  line-height: 1.1em;
+}
+
+footer {
+  position: fixed;
+  width: 100vw;
+  bottom: 0px;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+a, 
+a:link, 
+a:visited {
+  color: #fff;
 }
