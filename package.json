@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/v42studio/v42studio.github.io#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0",
     "push-dir": "^0.4.1",
     "shx": "^0.3.4"
