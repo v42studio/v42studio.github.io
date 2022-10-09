@@ -71,7 +71,6 @@ body {
   font-size: 16px;
   background-color: black;
   color: white;
-  height: 100vh;
 }
 
 a,
@@ -87,7 +86,7 @@ a:hover {
 main {
   text-align: center;
   vertical-align: middle;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
