@@ -141,7 +141,7 @@ footer {
   margin-top: 40px;
   
   ul {
-    display: block;
+    display: inline-block;
     margin: 0;
     padding: 0;
   }
@@ -149,30 +149,31 @@ footer {
   li {
     display: inline-block;
     font-size: 80%;
-    margin: 0;
-    padding: 0;
+    margin: 0 0 1em;
     &:after {
-      padding: 0 1em;
-      content: " · ";
+      padding: 1em;
+      color: #999;
+      content: "/ ";
     }
     &:last-child:after {
-      content: "";
-    }  
+      display: none;
+    }   
     &:hover {
       transform: scale(1.25);
       transition: all 0.3s ease-in-out;
     }
   }
 
-  div {
+  & > div {
     position: absolute;
-    top: 20px;
-    width: 100%;
-    max-width: 90%;
-    color: #ccc;
-
-    div {
+    top: 40px;
+    width: 90%;
+    left: 5%;
+    
+    & > div {
       display: none;
+      margin: 0 auto;
+      color: #ccc;
       border: 1px dashed #ccc;
       border-radius: 10px;
       padding: 1em;
