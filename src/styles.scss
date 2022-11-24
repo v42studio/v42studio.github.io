@@ -66,6 +66,10 @@ table {
   transition: all linear 0.1s;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -77,10 +81,23 @@ a,
 a:link,
 a:visited {
   color: #666;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+
+  svg {
+    display: inline-block;
+    fill: currentColor;
+    width: 1em;
+    height: 1em;  
+    vertical-align: middle;
+    margin-right: 0.2em;
+  }
 }
 
 a:hover {
   color: #fff;
+  border-bottom: 1px solid #fff;
 }
 
 main {
@@ -115,15 +132,51 @@ footer {
   padding: 1rem;
   text-align: center;
   font-size: 1rem;
+}
 
-  a {
+#values {
+  position: relative;
+  flex: 0;
+  text-align: center;
+  margin-top: 40px;
+  
+  ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
     display: inline-block;
-    width: 32px;
-    height: 32px;
+    font-size: 80%;
+    margin: 0;
+    padding: 0;
+    &:after {
+      padding: 0 1em;
+      content: " · ";
+    }
+    &:last-child:after {
+      content: "";
+    }  
+    &:hover {
+      transform: scale(1.25);
+      transition: all 0.3s ease-in-out;
+    }
+  }
 
-    svg {
-      fill: currentColor;
+  div {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    max-width: 90%;
+    color: #ccc;
+
+    div {
+      display: none;
+      border: 1px dashed #ccc;
+      border-radius: 10px;
+      padding: 1em;
+      line-height: 1.2em;
     }
   }
 }
-
